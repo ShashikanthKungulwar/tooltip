@@ -1,0 +1,78 @@
+
+
+.tooltip{
+    position: relative;
+    overflow: visible;
+    border: 1px dotted black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(24, 24, 101);
+    color: white;
+}
+.tooltip:hover .message{
+    display: inline;
+}
+.message
+{
+    /* display: none; */
+    color: black;
+    background-color: rgb(168, 168, 152);
+    width: 160px;
+    position: absolute;
+    border-radius: 3px;
+    display: none;
+}
+
+.topMessage{
+    top:-180%;
+    left: -30%;
+}
+.bottomMessage{
+    bottom:-180%;
+    left:-30%
+}
+.leftMessage{
+    top:-15%;
+    right:110%
+}
+.rightMessage{
+    top:-15%;
+    left:110%
+}
+
+
+.arrow{
+    position: absolute;
+    border-width: 8px;
+    border-style: solid;
+}
+
+.top{
+    border-color:rgb(168, 168, 152) transparent transparent transparent;
+    top: 100%;
+    left: 50%;
+}
+
+.left{
+    border-color:transparent transparent transparent rgb(168, 168, 152);
+    top:35%;
+    left: 100%;
+}
+
+.right{
+    border-color:transparent rgb(168, 168, 152) transparent transparent;
+    top:35%;
+    right: 100%;
+}
+
+.bottom{
+    border-color:transparent transparent rgb(168, 168, 152) transparent;
+    left:50%;
+    bottom: 100%;
+}
+.context{
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
