@@ -1,16 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import { useEffect, useState } from 'react';
-import Tooltip from './components/Tooltip/Tooltip';
-function App() {
 
+import './App.css';
+import { useState } from 'react';
+import Tooltip from './components/Tooltip/Tooltip';
+
+
+function App() {
+  //state for position of the tooltip
   const [position, setPosition] = useState('top');
+
+  //fucntion to change the position value using the ratio buttons
   function handleChange(event) {
     setPosition(event.target.value);
   }
-  // useEffect(()=>{
-  //   console.log(position)    to verify onchange function
-  // },[position])
+    
   return (
     <div className="App">
       <Tooltip position={position}>
